@@ -1,0 +1,48 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    overflow-x: hidden;
+    height: 100vh;
+    background-color: blanchedalmond;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+}
+
+.fill {
+    background-color: aquamarine;
+    width: 96px;
+    height: 96px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.empty {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(103, 158, 207);
+    border: 2px solid red;
+    border-radius: 10px;
+}
+
+.hold {
+    filter: opacity(0.4);
+    border: 2px solid red;
+    box-shadow: 0px 0px 5px red;
+}
+
+.hovered {
+    background-color: rgba(0,0,0,0.4);
+    border-style: dashed;
+    border-color: white;
+}
+
+@media (max-width: 800px) {
+    body {
+        flex-direction: column;
+    }
+}
